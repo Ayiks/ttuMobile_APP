@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="231dp"
+        android:layout_height="102dp"
+        android:layout_x="74dp"
+        android:layout_y="31dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <EditText
+        android:id="@+id/search_name"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_x="19dp"
+        android:layout_y="140dp"
+        android:ems="10"
+        android:hint="@string/TextName"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="278dp"
+        android:layout_y="141dp"
+        android:text="Search"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="161dp"
+        android:onClick="getReposClicked"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_repos"
+        android:layout_x="23dp"
+        android:layout_y="194dp"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+
+</AbsoluteLayout>
